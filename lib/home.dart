@@ -98,6 +98,14 @@ class HomePage extends StatelessWidget {
     return AsymmetricView(
       products: ProductsRepository.loadProducts(category),
     );
+     // we could remove return AsymmetricView and put this code
+    //  return GridView.count(
+    //     crossAxisCount: 2,
+    //     padding: const EdgeInsets.all(16.0),
+    //     childAspectRatio: 8.0 / 9.0,
+    //     children: _buildGridCards(context) // Changed code
+    //   );
+      
   }
 
 }
